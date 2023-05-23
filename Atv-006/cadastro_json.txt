@@ -1,0 +1,3 @@
+{"nome":"logan","idade":22,"cidade":"nova york"}
+{"nome":"batman","idade":35,"cidade":"gotham city"}
+{"nome":"lucas","idade":25,"cidade":"lucopolis"}
