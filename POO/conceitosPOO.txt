@@ -1,0 +1,15 @@
+classe = As classes são as estruturas básicas da programação orientada a objetos. Elas representam um tipo de dado definido pelo programador, que 
+descreve os atributos e comportamentos de um objeto. Uma classe é como um modelo ou um plano para a criação de objetos.
+
+atributos = Os atributos são as características ou propriedades de uma classe. Eles representam os dados que um objeto daquela classe pode armazenar. 
+Por exemplo, se tivermos uma classe chamada "Carro", seus atributos poderiam ser "marca", "modelo", "ano", "cor", entre outros.
+
+metodos = Os métodos são as ações ou comportamentos que uma classe pode executar. 
+Eles representam as funções ou operações que um objeto pode realizar. 
+Os métodos são responsáveis por manipular os atributos e realizar tarefas específicas. 
+Por exemplo, a classe "Carro" poderia ter métodos como "ligar", "acelerar", "frear" e "desligar".
+
+Instâncias: As instâncias, também conhecidas como objetos, são as representações concretas de uma classe. 
+Elas são criadas a partir do modelo definido pela classe e possuem seus próprios valores para os atributos. 
+Uma instância é como um exemplar individual de uma classe. Por exemplo, se tivermos a classe "Carro", 
+podemos criar várias instâncias desse objeto, como um carro chamado "Fiat Uno" e outro chamado "Ford Mustang".
