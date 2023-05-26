@@ -14,6 +14,6 @@ class olaMundo{
 }
 
 void main() {
-  olaMundo exibir = new olaMundo('Ola mundo');
+  olaMundo exibir = olaMundo('Ola mundo');
   exibir.olamundo();
 }

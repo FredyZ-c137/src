@@ -3,15 +3,15 @@ import 'dart:io';
 //classe IMC
 class IMC{
   //Atributos 
-  double altura;
-  double peso;
+  double? altura;
+  double? peso;
 
   //Método Construtor
-  IMC(this.altura, this.peso); 
+  IMC({this.altura, this.peso}); 
   
   //Método de calculo de IMC
   double calculoIMC(){
-    return peso / (altura * altura);
+    return peso! / (altura! * altura!);
   } 
 }
 
@@ -28,7 +28,7 @@ void main() {
   double peso = double.parse(stdin.readLineSync()!);
 
   //Instaciando o objeto
-  IMC imc = IMC(altura, peso);
+  IMC imc = IMC(altura: altura, peso: peso);
   double indiceDeMassaCorporia = imc.calculoIMC();
   print('Seu IMC é ${indiceDeMassaCorporia.toStringAsFixed(2)}');
   //Condicional que confere qual o IMC da pessoa

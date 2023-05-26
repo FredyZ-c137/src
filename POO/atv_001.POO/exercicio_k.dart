@@ -3,53 +3,53 @@ import 'dart:io';
 //Classe Triangulo
 class Triangulo{
   //Atributos
-  double base;
-  double altura;
+  double? base;
+  double? altura;
 
   //Método Construtor
-  Triangulo(this.base, this.altura);
+  Triangulo({this.base, this.altura});
 
   //Método de calculo de area
   double calculoAreaTriangulo(){
-    return (base * altura) / 2;
+    return (base! * altura!) / 2;
   }
 }
 //Classe Quadrado
 class Quadrado{
-  int lado;
+  int? lado;
 
   //Método Construtor
-  Quadrado(this.lado);
+  Quadrado({this.lado});
 
   //Método de calculo de area
   int calcularAreaQuadrado(){
-    return lado * lado;
+    return lado! * lado!;
   }
 }
 
 //Classe Retangulo
 class Retangulo{
-  int base;
-  int altura;
+  int? base;
+  int? altura;
 
   //Método Construtor
-  Retangulo(this.base, this.altura);
+  Retangulo({this.base, this.altura});
 
   //Método calculo de area
   int calcularAreaRetangulo(){
-    return base * altura;
+    return base! * altura!;
   }
 }
 //Classe Circulo
 class Circulo{
-  double raio;
+   double? raio;
   
   //Método Construtor
-  Circulo(this.raio);
+  Circulo({this.raio});
 
   //Método de calculo de area
   double calcularAreaCirculo(){
-    double area = 3.14 * (raio * raio);
+    double area = 3.14 * (raio! * raio!);
     return area; 
   }
 }
@@ -76,7 +76,7 @@ void main() {
         double altura = double.parse(stdin.readLineSync()!);
 
         //Instaciando o objeto  
-        Triangulo traingulo = Triangulo(base, altura);
+        Triangulo traingulo = Triangulo(base: base, altura: altura);
         double area = traingulo.calculoAreaTriangulo(); 
         //Saída de dados
         print('A area do triangulo é $area');
@@ -89,7 +89,7 @@ void main() {
         int lado = int.parse(stdin.readLineSync()!);
 
         //Instaciando o objeto  
-        Quadrado quadrado = Quadrado(lado);
+        Quadrado quadrado = Quadrado(lado: lado);
         int area = quadrado.calcularAreaQuadrado();
         //Saída de dados
         print('A area do quadrado é $area');
@@ -106,7 +106,7 @@ void main() {
         int altura = int.parse(stdin.readLineSync()!);
 
         //Instaciando o objeto   
-        Retangulo retangulo = Retangulo(base, altura);
+        Retangulo retangulo = Retangulo(base: base, altura: altura);
         int area = retangulo.calcularAreaRetangulo(); 
         //Saída de dados
         print('A area do retangulo é $area');
@@ -119,7 +119,7 @@ void main() {
         double raio = double.parse(stdin.readLineSync()!);
 
         //Instaciando o objeto  
-        Circulo circulo = Circulo(raio);
+        Circulo circulo = Circulo(raio: raio);
         double area = circulo.calcularAreaCirculo();
         //Saída de dados
         print('A area do circulo é $area');
